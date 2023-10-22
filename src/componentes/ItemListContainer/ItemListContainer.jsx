@@ -4,6 +4,8 @@ import ItemList from "../itemList/itemList"
 
 const ItemListContainer = ({greeting}) => {
     const [products, setProducts]=useState([])
+    
+    
 
     useEffect(() => {
         getProducts()
@@ -15,9 +17,12 @@ const ItemListContainer = ({greeting}) => {
    console.log(products)
    const productsComponents = products.map(prod =>{
     return (
+        
         <article key={prod.id}>
         <h1>{prod.name}</h1>
+        
         </article>
+        
     )
    })
 

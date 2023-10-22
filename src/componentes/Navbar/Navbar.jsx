@@ -1,12 +1,20 @@
+
 import CartWidget from '../CartWidget/CartWidget';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Buscador from '../Buscador/Buscador';
+
+
+
+
 
 
 
 function NavBar() {
+
   return (
+
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="#home">THE TRUE HELL CAPS</Navbar.Brand>
@@ -19,6 +27,7 @@ function NavBar() {
             <Nav.Link href="#link">Riñoneras</Nav.Link>
           </Nav>
           <CartWidget/>
+          <Buscador/>
         </Navbar.Collapse>
       </Container>
     </Navbar>
