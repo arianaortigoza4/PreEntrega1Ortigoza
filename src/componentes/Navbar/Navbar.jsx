@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 
+
 function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
@@ -21,7 +22,17 @@ function NavBar() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+
+    
   );
+
+  
 }
 
+
+
+
 export default NavBar;
+
+
+

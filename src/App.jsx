@@ -10,7 +10,7 @@ function App() {
   return (
     <>
    <NavBar />
-   <ItemListContainer greeting={'Bienvenido a mi eCommerce'}/>
+   <ItemListContainer greeting={'Bienvenido a THE TRUE HELL CAPS'}/>
       
     </>
   )
