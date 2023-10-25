@@ -4,7 +4,7 @@ const products = [
     name: 'BANDOLERA DE CUERO ',
     price:'12.000',
     category:'Accesorios',
-    img:'multimedia/BANDOCC2.jpg',
+    img:'./multimedia/BANDOCC2.jpg',
     stock:'100',
     description:'Bandolera 100% de cuero. Produccion propia. ',
 },
@@ -13,16 +13,16 @@ const products = [
     name: 'Gorra SHEK',
     price:'13.000',
     category:'Accesorios',
-    img:'multimedia/SHEK1.jpg',
-    stock:'100',
+    img:'./multimedia/SHEK1.jpg',
+    stock:'10',
     description:'Gorra con bordado a mano',
 },
 {
-    id:'GORRA.GET',
+    id:'GORRAGET',
     name: 'Gorra GET',
     price:'10.000',
     category:'Accesorios',
-    img:'multimedia/GET1.jpg',
+    img:'./multimedia/GET1.jpg',
     stock:'100',
     description:'Gorra con bordado a mano',
 },
@@ -34,5 +34,15 @@ export const getProducts = () => {
             resolve(products)
         }, 1000)
      
+    })
+}
+
+
+export const getProductById = (id) => {
+    return new Promise((resolve) => {
+        console.log("El id recibido es : " + id)
+        setTimeout(() => {
+            resolve(products.find(prod => prod.id === id))
+        }, 500)
     })
 }

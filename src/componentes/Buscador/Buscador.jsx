@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Item from "../Item/Item"; // Asegúrate de importar el componente Item desde la ubicación correcta
+import Item from "../Item/Item"; 
 
 const Buscador = () => {
   const [input, setInput] = useState("");
@@ -7,7 +7,6 @@ const Buscador = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simulamos resultados de búsqueda
     const fakeResults = [
       { id:'BANDO.STYLE', name: 'BANDOLERA DE CUERO', price: 12.000, img: 'multimedia/BANDOCC2.jpg' },
       { id:'ARTE3', name: 'Gorra de SHEK', price: 13.000, img: 'multimedia/SHEK1.jpg' },
