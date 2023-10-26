@@ -2,12 +2,12 @@ import { Link, Navigate } from "react-router-dom"
 const Item = ({id,name,price,category,img,stock,description}) =>{
     return (
     
-        <div>
+        <div className="catalogo">
             
-            <h1>{name}</h1>
-            <img src={img} style={{width:300}}/>
+            <h1 className="name">{name}</h1>
+            <img src={img} className="imagenDetail"/>
             <h2>${price}</h2>
-            <button onClick={() =>Navigate('/item')}>Ver  detalles</button>
+            <button  className = "buttonDatail"onClick={() =>Navigate('/item')}>Ver  detalles</button>
 
         </div>
     )
@@ -15,12 +15,3 @@ const Item = ({id,name,price,category,img,stock,description}) =>{
 export default Item
 
 
-// {
-//     id:'asdsa',
-//     name: 'asd',
-//     price:'sad',
-//     category:'sdfdsc',
-//     img:'sdfdsc',
-//     stock:'sdfdsc',
-//     description:'sdfdsc',
-// },

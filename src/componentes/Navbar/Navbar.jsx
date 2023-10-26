@@ -21,7 +21,7 @@ function NavBar() {
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home">VER TODO</Nav.Link>
+            <Nav.Link href="/">VER TODO</Nav.Link>
             <Nav.Link href="#link">Gorras</Nav.Link>
             <Nav.Link href="#link">Bandoleras</Nav.Link>
             <Nav.Link href="#link">Riñoneras</Nav.Link>

@@ -14,8 +14,9 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path='/' element={<ItemListContainer greeting={'Bienvenido a THE TRUE HELL CAPS'}/>}/>
+        <Route path='/' element={<ItemListContainer greeting={'Bienvenido a THE TRUE HELL CAPS'} />} clas/>
         <Route path='/item/:itemId' element={<ItemDetailContainer />}/>
+        
       </Routes>
     </BrowserRouter>  
    
