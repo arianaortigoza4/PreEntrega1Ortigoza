@@ -17,14 +17,14 @@ function NavBar() {
 
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">THE TRUE HELL CAPS</Navbar.Brand>
+        <Navbar.Brand href="/">THE TRUE HELL CAPS</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href="/">VER TODO</Nav.Link>
-            <Nav.Link href="#link">Gorras</Nav.Link>
-            <Nav.Link href="#link">Bandoleras</Nav.Link>
-            <Nav.Link href="#link">Riñoneras</Nav.Link>
+            <Nav.Link href="/category/Gorras">Gorras</Nav.Link>
+            <Nav.Link href="/category/Bandoleras">Bandoleras</Nav.Link>
+            <Nav.Link href="/category/Riñoneras">Riñoneras</Nav.Link>
           </Nav>
           <CartWidget/>
           <Buscador/>

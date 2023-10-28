@@ -15,7 +15,9 @@ function App() {
       <NavBar />
       <Routes>
         <Route path='/' element={<ItemListContainer greeting={'Bienvenido a THE TRUE HELL CAPS'} />} clas/>
+        <Route path='/category/:categoryId' element={<ItemListContainer greeting={'Bienvenido a THE TRUE HELL CAPS'} />} clas/>
         <Route path='/item/:itemId' element={<ItemDetailContainer />}/>
+        
         
       </Routes>
     </BrowserRouter>  
