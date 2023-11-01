@@ -10,28 +10,21 @@ const ItemListContainer = ({greeting}) => {
 
     console.log("categoryId = " + categoryId)
     
-    if(categoryId){
-
-        useEffect(() => {
+    useEffect(() => {
+        if(categoryId){
             getProductByCategoryId(categoryId)
             .then(result => {
                 setProducts(result)
             })
-       }, [])
-    
-       console.log(products)
-
-    }else{
-
-        useEffect(() => {
+        }else{
             getProducts()
             .then(result => {
                 setProducts(result)
             })
+            console.log(products)
+        }
        }, [])
     
-       console.log(products)
-    }
 
 
 

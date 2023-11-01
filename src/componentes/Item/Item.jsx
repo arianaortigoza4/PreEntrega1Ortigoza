@@ -7,7 +7,7 @@ const Item = ({id,name,price,category,img,stock,description}) =>{
             <h1 className="name">{name}</h1>
             <img src={img} className="imagenDetail"/>
             <h2>${price}</h2>
-            <button  className = "buttonDatail"onClick={() =>Navigate('/item')}>Ver  detalles</button>
+            <Link to={`/item/${id}`}>Ver detalle</Link>
 
         </div>
     )
