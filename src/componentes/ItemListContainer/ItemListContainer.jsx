@@ -21,8 +21,8 @@ const ItemListContainer = ({greeting}) => {
             .then(result => {
                 setProducts(result)
             })
-            console.log(products)
         }
+        console.log(products)
        }, [])
     
 
