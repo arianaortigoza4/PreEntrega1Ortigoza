@@ -7,6 +7,8 @@ import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailCon
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { CartProvider } from './context/CartContext.jsx'
 import { NotificationProvider } from './notificacion/NotificationContext.jsx'
+import Cart from './componentes/Cart/Cart.jsx';
+import Checkout from './componentes/Checkout/Checkout.jsx';
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
         <Route path="/" element={<ItemListContainer greeting="Bienvenido a THE TRUE HELL CAPS" />} />
         <Route path='/category/:categoryId' element={<ItemListContainer greeting={'Bienvenido a THE TRUE HELL CAPS'} />} clas/>
         <Route path='/item/:itemId' element={<ItemDetailContainer />}/>
-        
+        <Route path='/item/:itemId' element={<ItemDetailContainer />}/>
+        <Route path='/cart' element={<Cart />}/>
+        <Route path='/checkout' element={<Checkout />}/>
         
       </Routes>
     </BrowserRouter>  
