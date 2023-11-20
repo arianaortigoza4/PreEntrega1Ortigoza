@@ -12,7 +12,7 @@ const ContacForm= ({onCreate}) =>{
 
     }
     return (
-            <Form onSubmit={handleSubmit}>
+            <Form onSubmit={handleSubmit} className="formData">
       <Form.Group className="mb-3" controlId="formBasicEmail" value={email} onChange={(e) => setEmail(e.target.value)}>
         <Form.Label>Email</Form.Label>
         <Form.Control type="email" placeholder="Email" />
@@ -30,7 +30,7 @@ const ContacForm= ({onCreate}) =>{
         <Form.Control type="number" placeholder="Phone" />
       </Form.Group>
       <Button variant="primary" type="submit">
-        Submit
+            Generar orden
       </Button>
     </Form>
     )

@@ -70,20 +70,18 @@ const Checkout = () => {
     }
 
     if(loading) {
-        return <h1>Se esta generando su orden...</h1>
+        return <h1 className="orden">Se esta generando su orden...</h1>
     }
 
     if(orderId) {
-        return <h1>El id de su orden es: {orderId}</h1>
+        return <h1 className="orden">El id de su orden es: {orderId}, pronto nos comunicaremos via email. ¡Gracias por comprar en TTHCAPS!</h1>
     }
 
     return (
         <>
-            <h1>Checkout</h1>
-            <h2>Realizar formulario para obtener los datos del usuario, este va a ser un componente orientado a evento</h2>
+            <h1 className="orden">Cargar datos para generar la orden: </h1>
             <ContacForm onCreate={createOrder}></ContacForm>
              
-            {/* Este boton estaria dentro del formulario ejecutando la funcion recibida por props */}
         </>
     )
 }

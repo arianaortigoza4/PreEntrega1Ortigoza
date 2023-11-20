@@ -95,3 +95,15 @@
 .verDetalles{
   color: black;
 }
+
+.formData{
+  margin: 15px;
+  padding: 15px;
+}
+
+.orden{
+  padding: 10px;
+  margin: 10px;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
