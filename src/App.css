@@ -83,3 +83,15 @@
   margin: 10px;
   
 }
+
+.botonDetalles{
+  padding: 8px;
+  margin: 8px;
+  color: black;
+  background-color:lavender;
+
+}
+
+.verDetalles{
+  color: black;
+}

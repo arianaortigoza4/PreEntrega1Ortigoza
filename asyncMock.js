@@ -1,6 +1,6 @@
 const products = [
 {
-    id:'BANDOSTYLE',
+    id:'zb4stBbnsGFu3HuhxJRH',
     name: 'BANDOLERA DE CUERO ',
     price:'12.000',
     category:'Bandoleras',
@@ -9,7 +9,7 @@ const products = [
     description:'Bandolera 100% de cuero. Produccion propia. ',
 },
 {
-    id:'ARTE3',
+    id:'WpOl7WVlSyvaiKYyvewo',
     name: 'Gorra SHEK',
     price:'13.000',
     category:'Gorras',
@@ -18,7 +18,7 @@ const products = [
     description:'Gorra con bordado a mano',
 },
 {
-    id:'GORRAGET',
+    id:'CQ8CVkqWvsus4dLekG2r',
     name: 'Gorra GET',
     price:'10.000',
     category:'Gorras',
@@ -27,7 +27,7 @@ const products = [
     description:'Gorra con bordado a mano',
 },
 {
-    id:'RIÑOSTYLE',
+    id:'Fzule3bbKHCZcXHAgvtU',
     name: 'Riñonera STYLE',
     price:'10.000',
     category:'Riñoneras',

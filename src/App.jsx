@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
 import NavBar from './componentes/Navbar/Navbar'
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import { CartProvider } from './context/CartContext.jsx'
 import { NotificationProvider } from './notificacion/NotificationContext.jsx'
 import Cart from './componentes/Cart/Cart.jsx';

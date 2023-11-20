@@ -2,6 +2,7 @@ import { useState } from "react"
 import { useCart } from "../../context/CartContext"
 import { getDocs, collection, query, where, documentId, writeBatch, addDoc } from 'firebase/firestore'
 import { db } from "../../services/firebase/firebaseConfig"
+import ContacForm from "../ContacForm/ContacForm"
 
 const Checkout = () => {
     const [orderId, setOrderId] = useState('')
@@ -78,11 +79,15 @@ const Checkout = () => {
         <>
             <h1>Checkout</h1>
             <h2>Realizar formulario para obtener los datos del usuario, este va a ser un componente orientado a evento</h2>
-
-            <button onClick={createOrder}>Crear orden</button> 
+            <ContacForm onCreate={createOrder}></ContacForm>
+             
             {/* Este boton estaria dentro del formulario ejecutando la funcion recibida por props */}
         </>
     )
 }
 
 export default Checkout
+
+
+
+

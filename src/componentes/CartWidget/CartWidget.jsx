@@ -9,7 +9,7 @@ const CartWidget = () => {
 
     return (
         <button onClick={() => navigate('/cart')}>
-        <img src={cart} className='btn btn-danger'/>
+        <img src={cart} className='btn btn-white'/>
             {totalQuantity}
         </button>
     )
