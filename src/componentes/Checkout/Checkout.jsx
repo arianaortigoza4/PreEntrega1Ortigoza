@@ -13,11 +13,13 @@ const Checkout = () => {
         try {
             setLoading(true)
 
+            console.log(userData)
+
             const objOrder = {
                 buyer: {
-                    name: 'Sebastian Zuviria',
-                    email: 'contact@sebaz.io',
-                    phone: '123456678'
+                    name: userData.name,
+                    email: userData.email,
+                    phone: userData.phone
                 },
                 items: cart,
                 total

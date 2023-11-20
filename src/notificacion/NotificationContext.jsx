@@ -5,8 +5,8 @@ const Notification = ({ notificationData }) => {
       position: 'absolute',
       top: 100,
       right: 50,
-      backgroundColor: notificationData.type === 'success' ? 'green' : 'red',
-      color: 'white',
+      backgroundColor: notificationData.type === 'success' ? 'green' : 'white',
+      color: 'black',
       padding: '10px 20px 10px 20px',
       borderRadius: 10
     }
