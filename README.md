@@ -13,32 +13,25 @@ En resumen, la sinergia entre React.js, Javascript, Bootstrap y CSS ha sido esen
 * JavaScript
 * Firebase
 
-# Estructura del Proyecto
-|-- src
-|   |-- components
-|   |   |-- Cart
-|   |   |-- CartWidget
-|   |   |--Checkout
-|   |   |--ContacForm
-|   |   |--Item
-|   |   |--ItemDetail
-|   |   |--ItemDetailContainer
-|   |   |--ItemList
-|   |   |--ItemListContainer
-|   |   |--NavBar
-|   |--context
-|   |--notificacion
-|   |--services
-|       |-- firebase
-|   |       |-- firebaseConfig.js
-|   |       |--firestore
-                |--products.js
-
-|   |-- App.js
-|   |-- index.js
-|-- public
-|-- README.md
-
+# Descripción de Carpetas y Archivos Principales
+* src: Contiene el código fuente del proyecto.
+* componentes: Componentes reutilizables.
+* Cart: El componente `Cart` se encarga de mostrar los productos que han sido agregados al carrito. También proporciona un enlace para confirmar y generar la orden de compra.
+* CartWidget: El componente `CartWidget` muestra un ícono de carrito y la cantidad total de productos en el carrito. Además, al hacer clic en el botón, redirige al usuario a la página del carrito.
+* Checkout: El componente `Checkout` se encarga de gestionar el proceso de compra, incluyendo la carga de datos del usuario y la generación de una orden de compra.
+* ContacForm: El componente `ContacForm` proporciona un formulario para que el usuario ingrese sus datos personales, como nombre, correo electrónico y número de teléfono.
+* Item: El componente `Item` representa un elemento individual en un catálogo de productos. Muestra información como el nombre, precio, imagen y una opción para ver detalles.
+* ItemDetail: El componente `ItemDetail` representa los detalles de un producto, incluyendo información como nombre, categoría, imagen, precio, stock y descripción. Permite al usuario agregar el producto al carrito seleccionando la cantidad.
+* ItemDetailContainer: El componente `ItemDetailContainer` es responsable de cargar y mostrar los detalles de un producto individual basado en el identificador del producto proporcionado en la URL.
+* ItemList: El componente `ItemList` es responsable de mostrar una lista de productos utilizando el componente `Item`.
+* ItemListContainer: El componente `ItemListContainer` es responsable de cargar y mostrar una lista de productos utilizando el componente `ItemList`. Puede filtrar los productos por categoría si se proporciona un identificador de categoría en la URL.
+* NavBar: El componente `NavBar` representa la barra de navegación principal de la aplicación, que incluye el logo de la marca y enlaces a diferentes categorías de productos, así como un widget de carrito.
+* context: Dentro de la carpeta se encuentra CartContext. El contexto `CartContext` y su proveedor `CartProvider` permiten gestionar el estado del carrito de compras en una aplicación React. Estos elementos son utilizados para compartir datos relacionados con el carrito entre componentes sin necesidad de pasar propiedades manualmente a través de cada nivel.
+* notificacion: Dentro de esta carpeta tenemos `NotificationContext`. El contexto `NotificationContext` y su proveedor `NotificationProvider` permiten gestionar y mostrar notificaciones en una aplicación React. Estos elementos son utilizados para compartir datos relacionados con las notificaciones entre componentes sin necesidad de pasar propiedades manualmente a través de cada nivel.
+* services: Contiene servicios externos.
+* firebase: Configuración de Firebase.
+* firebaseConfig.js: Este código configura e inicializa Firebase en una aplicación React utilizando Firebase SDK para JavaScript. 
+* firestore: Esta carpeta contiene a products.js y este código proporciona funciones para obtener productos desde una base de datos Firestore de Firebase
 # Mi GIF 
 
 ![](http://media.tumblr.com/tumblr_ls034r0jku1qethke.gif)
