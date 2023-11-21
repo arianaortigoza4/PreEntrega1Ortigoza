@@ -34,7 +34,7 @@ En resumen, la sinergia entre React.js, Javascript, Bootstrap y CSS ha sido esen
 * firestore: Esta carpeta contiene a products.js y este código proporciona funciones para obtener productos desde una base de datos Firestore de Firebase
 # Mi GIF 
 
-![](https://drive.google.com/file/d/1QAQGn01Moh9YJcCU7ykIIkmrZfpdTz-2/view?usp=sharing)
+![](../ecommerceAri/multimedia/gitPage.gif)
 
 
 
