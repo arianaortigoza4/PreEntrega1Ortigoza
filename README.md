@@ -13,4 +13,35 @@ En resumen, la sinergia entre React.js, Javascript, Bootstrap y CSS ha sido esen
 * JavaScript
 * Firebase
 
+# Estructura del Proyecto
+|-- src
+|   |-- components
+|   |   |-- Cart
+|   |   |-- CartWidget
+|   |   |--Checkout
+|   |   |--ContacForm
+|   |   |--Item
+|   |   |--ItemDetail
+|   |   |--ItemDetailContainer
+|   |   |--ItemList
+|   |   |--ItemListContainer
+|   |   |--NavBar
+|   |--context
+|   |--notificacion
+|   |--services
+|       |-- firebase
+|   |       |-- firebaseConfig.js
+|   |       |--firestore
+                |--products.js
+
+|   |-- App.js
+|   |-- index.js
+|-- public
+|-- README.md
+
+# Mi GIF 
+
+![](http://media.tumblr.com/tumblr_ls034r0jku1qethke.gif)
+
+
 
